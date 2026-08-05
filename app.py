@@ -34,7 +34,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 def extract_pdf_text(pdf_file):
-    """PDF dosyasının sayfalarındaki metinleri okuyup birleştirir."""
     pdf_reader = PdfReader(pdf_file)
     text = ""
     for page in pdf_reader.pages:
